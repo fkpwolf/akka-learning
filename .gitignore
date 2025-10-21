@@ -1,0 +1,42 @@
+# Ignore SBT files
+target/
+project/target/
+project/project/
+
+# Ignore IDE files
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+*~
+
+# Ignore build artifacts
+*.class
+*.log
+*.jar
+*.war
+*.ear
+
+# Ignore dependency management
+.ivy2/
+.cache
+.lib/
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore metals and bloop (Scala IDE tools)
+.metals/
+.bloop/
+metals.sbt
+project/metals.sbt
+
+# Ignore script files
+install-sbt.sh
+cs
+
+# Ignore local environment files
+.env
+.env.local
