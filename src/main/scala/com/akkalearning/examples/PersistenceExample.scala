@@ -66,7 +66,7 @@ object PersistenceExample extends App {
     val balance1 = account.ask(BankAccountActor.GetBalance)
     balance1.onComplete {
       case Success(BankAccountActor.CurrentBalance(balance)) =>
-        println(s"✓ Current balance: $${balance}")
+        println(s"✓ Current balance: $$${balance}")
       case Failure(ex) =>
         println(s"✗ Failed to get balance: ${ex.getMessage}")
     }
